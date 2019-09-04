@@ -2,11 +2,24 @@
     width: 960px;
     text-align: center; 
     margin: 100px auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .row {
     background-color: lightblue;
     height: 125px;
-    width: 100%
+    width: 100%;
+    color: blue; 
 }
 
+h1 {
+    font-size: 50px;
+}
+
+#fullDate {
+    font-size: 35px;
+}
+
+#fullTime {
+    font-size: 35px;
+}
