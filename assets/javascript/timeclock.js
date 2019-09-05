@@ -59,13 +59,12 @@ console.log(current_mins);
 console.log(current_secs);
 console.log(fullTime)
 $("#fullTime").text(fullTime);
-// $("#day").text(current_day + ", " + current_month + " " + current_numday + ", " + current_fullYear + "</br>" + current_hours + " : " + current_mins + " : " + current_secs);  
 
-// document.write ( ", " );
-// document.write ( month_names[current_date.getMonth()] );
-// document.write ( " " + current_date.getDate() );
-// document.write ( " " );
-// document.write ( " " + current_date.getFullYear() );
+// *************************************************************************************
+
+function dropbtn01() {
+    document.getElementById("grtMsg").innerHTML = "Awesome!  I'm glad you know your name.  Now finish clocking in your time!"
+}
 
 //Develop a punch in and punch out button so they can record their time. 
 
