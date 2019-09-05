@@ -42,29 +42,49 @@ var current_hours = current_date.getHours(); //Get current hours
 var current_mins = current_date.getMinutes(); //Get current Minutes
 var current_secs = current_date.getSeconds(); // Get current seconds
 
-var fullDate = current_day + ", " + current_month + " " + current_numday + ", " + current_fullYear
-var fullTime = current_hours + ":" + current_mins + ":" + current_secs
+var fullDate = current_day + ", " + current_month + " " + current_numday + ", " + current_fullYear;
+var fullTime = current_hours + ":" + current_mins + ":" + current_secs;
 
-console.log(current_day);
-console.log(current_month);
-console.log(current_numday);
-console.log(current_fullYear);
-console.log(fullDate);
 $("#fullDate").text(fullDate);
 
 //*********************************************** */
 
-console.log(current_hours);
-console.log(current_mins);
-console.log(current_secs);
-console.log(fullTime)
 $("#fullTime").text(fullTime);
 
 // *************************************************************************************
 
-function dropbtn01() {
-    document.getElementById("grtMsg").innerHTML = "Awesome!  I'm glad you know your name.  Now finish clocking in your time!"
-}
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+  $("#drpdwn").click(myFunction);
+
+
+// function changeFunc() {
+//     var selectBox = document.getElementById("selectBox");
+//     var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+//     console.log(selectedValue); 
+// }
+// $( "#drpbtn01" ).click(function() {
+//     console.log( "Handler for .click() called." );
+//   });
+
 
 //Develop a punch in and punch out button so they can record their time. 
 
